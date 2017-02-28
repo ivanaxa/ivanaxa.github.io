@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>How to NASA API</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!-- Minified - Latest version of ConciseCSS -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
+      <!-- CONCISE UI - Latest version Minified  -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-ui/concise-ui.min.css">
+      <!-- CONCISE UTILS - Latest version Minified -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-utils/concise-utils.min.css">
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="images/astrofav.png">
+
+  </head>
+  <body>
+
+      <header container class="nasablue">
+          <div grid="no-collapse">
+              <div column="8" class="whitetext">
+                  <h2><a href="index.html">NASA API Tutorial</a><h2>
+              </div>
+              <div column="4" align="right" class="inline whitetext">
+                      <h5><a href="http://ivanxa.me/" target="_blank">About</a></h5>
+                      <span></span>
+                      <h5><a href="mailto:spammusubi91@gmail.com">Contact</a></h5>
+              </div>
+
+          </div>
+          <ul class="breadcrumb-nav _text-center">
+              <li class="item"><a href="index.html">Home</a></li>
+              <li class="item -active">Getting Started</li>
+              <li class="item"><a href="jscalls.html">JS calls</a></li>
+              <li class="item"><a href="json.html">Decoding JSON</a></li>
+
+              <li class="item"><a href="apod.html">APOD + DOM Control</a></li>
+              <li class="item"><a href="responsiveness.html">Adding Responsiveness</a></li>
+              <li class="item"><a href="conclusion.html">Conclusion</a></li>
+
+          </ul>
+          <div class="progress-bar -striped">
+              <span class="progress" style="width: 16.66%"></span>
+          </div>
+      </header>
+
+
+      <div container>
+            <br>
+            <h4>Authentification: Getting an API Key </h4>
+            <p>Before you begin, you should <a href="https://api.nasa.gov/index.html#apply-for-an-api-key" target="_blank">
+            sign up for a NASA API key</a>.
+            </p>
+            <br>
+            <div align="center"><img src="images/signUp.png" alt="Sign up page" width="550px"></div>
+            <p>
+            After signing up, you will recieve an email with your key which you will use in this tutorial.
+            As with most other APIs, it is necessary to request a key so that the organization hosting
+            the API can keep track of who is requesting its data. The host can also limit the amount of
+            requests made by a single application or person so as to limit the burden on its servers.
+            For the NASA APIs, you are allowed 1000 requests per hour.
+            </p>
+
+            <p>Once you have your API key, we can start exploring what NASA has to offer. Let's first get caught up
+            on how to use Javascript to call information from the NASA API.</p>
+
+
+            <div grid="justify-center">
+              <span>
+                  <a href="jscalls.html"><button> Onwards </button></a>
+              </span>
+            </div>
+          <br>
+      </div>
+
+
+    <div container class="nasablue">
+        <br>
+    </div>
+
+  </body>
+
+ </html>

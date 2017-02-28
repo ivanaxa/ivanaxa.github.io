@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>How to NASA API</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!-- Minified - Latest version of ConciseCSS -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
+      <!-- CONCISE UI - Latest version Minified  -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-ui/concise-ui.min.css">
+      <!-- CONCISE UTILS - Latest version Minified -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-utils/concise-utils.min.css">
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="images/astrofav.png">
+
+      <!--JQuery-->
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+      </script>
+
+
+      <script src="js/index.js"></script>
+  </head>
+
+  <body>
+
+    <header container class="nasablue">
+        <div grid="no-collapse">
+            <div column="8" class="whitetext">
+                <h2><a href="index.html">NASA API Tutorial</a><h2>
+            </div>
+            <div column="4" align="right" class="inline whitetext">
+                    <h5><a href="http://ivanxa.me/" target="_blank">About</a></h5>
+                    <span></span>
+                    <h5><a href="mailto:spammusubi91@gmail.com">Contact</a></h5>
+            </div>
+
+        </div>
+         <ul class="breadcrumb-nav _text-center">
+            <li class="item -active">Home</li>
+            <li class="item"><a href="1-getting-started.html">Getting Started</a></li>
+            <li class="item"><a href="jscalls.html">JS calls</a></li>
+            <li class="item"><a href="json.html">Decoding JSON</a></li>
+
+            <li class="item"><a href="apod.html">APOD + DOM Control</a></li>
+            <li class="item"><a href="responsiveness.html">Adding Responsiveness</a></li>
+            <li class="item"><a href="conclusion.html">Conclusion</a></li>
+
+        </ul>
+        <div class="progress-bar -striped">
+            <span class="progress" style="width: 2.5%"></span>
+        </div>
+    </header>
+
+    <div container>
+        <br>
+        <div>
+            <img src="images/logo.png" alt="NASA Logo" align="right">
+            <h4>
+                "We reach for new heights and reveal the unknown for the benefit of humankind."
+                <span><p>-NASA Vision<p></span>
+            </h4>
+        </div>
+
+        <div class="divBG">
+        <p>
+        As the pioneering organization that has been on the forefront of space
+        exploration and aeronautics research since 1958, the
+        <a href="https://www.nasa.gov/" target="_blank">National Aeronautics and Space Administration(NASA)</a>
+        is committed to educating the public about Earth, our galaxy,
+        and ultimately, the universe.
+        </p>
+        <p>
+        In keeping with this goal of education,
+        NASA has opened much of it's data to developers in the form of
+        <a href="https://api.nasa.gov/index.html" target="_blank">public APIs</a>.
+        In this How-to guide, I will show you how to retrieve this information
+        and how to make an Astronomy Picture of the Day viewer.
+        </p>
+        <p>
+        This tutorial assumes a basic understanding of HTML and Javascript.
+        If you need a brush up on these topics, you can easily get up to speed
+        using the <a href="http://www.htmldog.com/" target="_blank">HTML Dog </a> reference.
+        It's an incredibly useful source that teaches you enough to get started
+        and more.
+        </p>
+        </div>
+        <br>
+
+        <div align="center">
+            <img id="apodDemo" src="">
+            <iframe id="apodvid" type="text/html" width="720" height="405"
+                src="" frameborder="0" allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen"
+                oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">
+            </iframe>
+        </div>
+
+        <br>
+
+        <div grid="justify-center">
+            <span>
+                <p class="center">Let's begin</p>
+                <a href="1-getting-started.html"><button> LIFTOFF </button></a>
+            </span>
+        </div>
+        <br>
+    </div>
+
+    <div container class="nasablue">
+        <br>
+    </div>
+
+
+  </body>
+
+ </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>How to NASA API</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!-- Minified - Latest version of ConciseCSS -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
+      <!-- CONCISE UI - Latest version Minified  -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-ui/concise-ui.min.css">
+      <!-- CONCISE UTILS - Latest version Minified -->
+      <link rel="stylesheet" href="https://cdn.concisecss.com/concise-utils/concise-utils.min.css">
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="images/astrofav.png">
+
+      <!--JQuery-->
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+      </script>
+
+  </head>
+  <body>
+
+            <header container class="nasablue">
+                <div grid="no-collapse">
+                    <div column="8" class="whitetext">
+                        <h2><a href="index.html">NASA API Tutorial</a><h2>
+                    </div>
+                    <div column="4" align="right" class="inline whitetext">
+                            <h5><a href="http://ivanxa.me/" target="_blank">About</a></h5>
+                            <span></span>
+                            <h5><a href="mailto:spammusubi91@gmail.com">Contact</a></h5>
+                    </div>
+
+                </div>
+                <ul class="breadcrumb-nav _text-center">
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="1-getting-started.html">Getting Started</a></li>
+                    <li class="item -active">JS calls</li>
+                    <li class="item"><a href="json.html">Decoding JSON</a></li>
+
+                    <li class="item"><a href="apod.html">APOD + DOM Control</a></li>
+                    <li class="item"><a href="responsiveness.html">Adding Responsiveness</a></li>
+                    <li class="item"><a href="conclusion.html">Conclusion</a></li>
+
+                </ul>
+                <div class="progress-bar -striped">
+                    <span class="progress" style="width: 33.33%"></span>
+                </div>
+            </header>
+    </header>
+
+    <div container>
+        <h4>Javascript Calls</h4>
+        <p>In order to make a Javascript call to an API, you must create a XMLHttpRequest object as follows.</p>
+        <pre>var req = new XMLHttpRequest();</pre>
+        <p>In addition, we will need the API URL to request information from. For this example,
+            we will use <a href="https://api.nasa.gov/api.html#apod" target="_blank">NASA's APOD(Astronomy Picture of the Day) API</a> URL.
+        </p>
+        <pre>var url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"</pre>
+        <p>In place of "DEMO_KEY" after the api_key string parameter, you would use your
+            API key provided to you when you signed up for the
+            <a href="https://api.nasa.gov/index.html#apply-for-an-api-key" target="_blank">NASA API key</a>.
+        </p>
+
+        <p>A javscript call to APOD will look like this.</p>
+        <pre>var req = new XMLHttpRequest();
+req.open("GET", url, true);
+req.send(null);
+req.addEventListener("load", function(){
+if(req.status >= 200 && req.status < 400){
+    var response = JSON.parse(req.responseText);
+}
+});
+        </pre>
+        <p>A get request is sent to the URL, and if the request is successful,
+            the JSON object returned will look similar to the following.
+        </p>
+        <pre>{
+"copyright":"Fritz Helmut Hemmerich",
+"date":"2017-02-20",
+"explanation":"How can a comet have three tails?
+Normally, a comet has two tails: an ion tail of
+charged particles emitted by the comet and pushed
+out by the wind from the Sun, and a dust tail of
+small debris that orbits behind the comet but is
+also pushed out, to some degree, by the solar wind.
+Frequently a comet will appear to have only one tail
+because the other tail is not easily visible from the
+Earth. In the featured unusual image, Comet 2P/Encke
+appears to have three  tails because the ion tail
+split just near to the time when the image was taken.
+The complex solar wind is occasionally turbulent and
+sometimes creates unusual structure in an ion tail.
+On rare occasions even ion-tail disconnection events
+have been recorded. An image of the Comet Encke taken
+two days later gives a perhaps less perplexing perspective.",
+"hdurl":"http://apod.nasa.gov/apod/image/1702/Encke3tails_Hemmerich_1519.jpg",
+"media_type":"image",
+"service_version":"v1",
+"title":"Almost Three Tails for Comet Encke",
+"url":"http://apod.nasa.gov/apod/image/1702/Encke3tails_Hemmerich_960.jpg"
+}
+        </pre>
+
+        <p>All the information returned in the JSON object can be used to
+            modify how a page looks. In the next page, we will see our first
+            use of the APOD API in action.
+        </p>
+        <br>
+        <div grid="justify-center">
+            <span>
+                <a href="json.html"><button> We have a go </button></a>
+            </span>
+        </div>
+
+        <br>
+    </div>
+
+    <div container class="nasablue">
+        <br>
+    </div>
+
+  </body>
+
+ </html>
