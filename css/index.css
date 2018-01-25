@@ -1,0 +1,66 @@
+#Title {
+    text-align:center;
+
+}
+
+/*Font */
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+ul
+{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+    /*width: 40%;*/
+}
+
+.fixedbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.section_title{
+    color: #2F5CFF;
+}
+
+/*Header Material*/
+#header {
+  position: relative;
+  height: 100vh;
+  background: url("/images/griffith.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#header .inner {
+  font-family: 'Raleway', serif;
+  color:white;
+  text-align: center;
+  vertical-align:middle;
+  background: black;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+}
+
+#about p{
+    padding-bottom: 20px;
+}
+
+#about{
+    padding-top: 20px;
+}
+
+/*image sizes*/
+.company_logo{
+    height:150px;
+}
